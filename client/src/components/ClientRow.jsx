@@ -4,10 +4,9 @@ import { DELETE_CLIENT } from '../mutations/clientMutations';
 
 
 export default function ClientRow({ client }) {
-  const {deleteClient} = useMutation(DELETE_CLIENT, {
+  const [deleteClient] = useMutation(DELETE_CLIENT, {
     variables: { id: client.id },
-
-  })
+  });
 
   return (
     <tr>
