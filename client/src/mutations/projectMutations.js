@@ -1,4 +1,4 @@
-import { gql } from "@apollo/client";
+import { gql } from '@apollo/client';
 
 const ADD_PROJECT = gql`
   mutation AddProject(
@@ -8,9 +8,9 @@ const ADD_PROJECT = gql`
     $clientId: ID!
   ) {
     addProject(
-      name: $name
-      description: $description
-      status: $status
+      name: $name,
+      description: $description,
+      status: $status,
       clientId: $clientId
     ) {
       id
