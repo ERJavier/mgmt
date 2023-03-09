@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server/index.js",
-    "dev": "nodemon server/index.js"
+    "dev": "nodemon server/index.js && react-scripts start"
   },
   "keywords": [],
   "author": "Javier Cepeda <erjavierc@gmail.com>",
